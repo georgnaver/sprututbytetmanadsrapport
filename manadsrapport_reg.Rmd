@@ -1,8 +1,8 @@
 ---
-title: "Månadsrapport"
+title: "Rapport"
 subtitle: "Sprututbytesmottagningen i Stockholm"
 author: "Georg Navér"
-date: "`r Sys.Date()`"
+date: "2021-08-05"
 output:
   html_document:
     includes:
@@ -32,7 +32,7 @@ pacman::p_load(
   ggsci
 )
 
-reg <- rio::import("/Users/georgnaver/Documents/R/Månadsrapport sprutis/Infcare tom jun 30 -21/Orginal/registrering.xlsx")
+reg <- rio::import("/Users/georgnaver/github/sprututbytetmanadsrapport/data/jun/registrering.xlsx")
 
 # pipe the raw dataset through the function clean_names(), assign result as "reg"  
 reg <- reg %>% 
